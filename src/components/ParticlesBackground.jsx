@@ -21,13 +21,13 @@ const ParticlesBackground = () => {
           autoPlay: true,
           background: {
             color: {
-              value: "#00172D",
+              value: "",
             },
             image: "",
             position: "",
             repeat: "",
             size: "",
-            opacity: 0.9,
+            opacity: 1,
           },
           backgroundMask: {
             composite: "destination-out",
@@ -43,14 +43,14 @@ const ParticlesBackground = () => {
           defaultThemes: {},
           delay: 0,
           fullScreen: {
-            enable: true,
-            zIndex: -1,
+            enable: false,
+            zIndex: 0,
           },
           detectRetina: true,
           duration: 0,
           fpsLimit: 120,
           interactivity: {
-            detectsOn: "canvas",
+            detectsOn: "window",
             events: {
               onClick: {
                 enable: false,
@@ -64,7 +64,7 @@ const ParticlesBackground = () => {
               },
               onHover: {
                 enable: false,
-                mode: "bubble",
+                mode: [],
                 parallax: {
                   enable: false,
                   force: 2,
@@ -78,44 +78,9 @@ const ParticlesBackground = () => {
             },
             modes: {
               trail: {
-                delay: 0.005,
-                pauseOnStop: true,
-                quantity: 5,
-                particles: {
-                  color: {
-                    value: "#ff0000",
-                    animation: {
-                      enable: true,
-                      speed: 400,
-                      sync: true,
-                    },
-                  },
-                  collisions: {
-                    enable: false,
-                  },
-                  links: {
-                    enable: false,
-                  },
-                  move: {
-                    outModes: {
-                      default: "destroy",
-                    },
-                    speed: 2,
-                  },
-                  size: {
-                    value: {
-                      min: 1,
-                      max: 5,
-                    },
-                    animation: {
-                      enable: true,
-                      speed: 5,
-                      sync: true,
-                      startValue: "min",
-                      destroy: "max",
-                    },
-                  },
-                },
+                delay: 1,
+                pauseOnStop: false,
+                quantity: 1,
               },
               attract: {
                 distance: 200,
@@ -132,12 +97,6 @@ const ParticlesBackground = () => {
                 distance: 200,
                 duration: 0.4,
                 mix: false,
-                divs: {
-                  distance: 200,
-                  duration: 0.4,
-                  mix: false,
-                  selectors: [],
-                },
               },
               connect: {
                 distance: 80,
@@ -169,15 +128,6 @@ const ParticlesBackground = () => {
                 speed: 1,
                 maxSpeed: 50,
                 easing: "ease-out-quad",
-                divs: {
-                  distance: 200,
-                  duration: 0.4,
-                  factor: 100,
-                  speed: 1,
-                  maxSpeed: 50,
-                  easing: "ease-out-quad",
-                  selectors: [],
-                },
               },
               slow: {
                 factor: 3,
@@ -208,10 +158,10 @@ const ParticlesBackground = () => {
           particles: {
             bounce: {
               horizontal: {
-                value: 1,
+                value: 0,
               },
               vertical: {
-                value: 1,
+                value: 0,
               },
             },
             collisions: {
@@ -235,15 +185,15 @@ const ParticlesBackground = () => {
               },
             },
             color: {
-              value: "#096f77",
+              value: "#f00",
               animation: {
                 h: {
                   count: 0,
                   enable: true,
-                  speed: 50,
+                  speed: 30,
                   decay: 0,
                   delay: 0,
-                  sync: false,
+                  sync: true,
                   offset: 0,
                 },
                 s: {
@@ -292,16 +242,16 @@ const ParticlesBackground = () => {
                 mode: "percent",
                 radius: 0,
               },
-              decay: 0,
+              decay: 0.1,
               distance: {},
-              direction: "none",
+              direction: "top",
               drift: 0,
               enable: true,
               gravity: {
                 acceleration: 9.81,
-                enable: false,
+                enable: true,
                 inverse: false,
-                maxSpeed: 50,
+                maxSpeed: 200,
               },
               path: {
                 clamp: true,
@@ -312,15 +262,18 @@ const ParticlesBackground = () => {
                 options: {},
               },
               outModes: {
-                default: "out",
-                bottom: "out",
-                left: "out",
-                right: "out",
-                top: "out",
+                default: "destroy",
+                bottom: "destroy",
+                left: "destroy",
+                right: "destroy",
+                top: "none",
               },
               random: false,
               size: false,
-              speed: 2,
+              speed: {
+                min: 50,
+                max: 150,
+              },
               spin: {
                 acceleration: 0,
                 enable: false,
@@ -336,7 +289,7 @@ const ParticlesBackground = () => {
             },
             number: {
               density: {
-                enable: true,
+                enable: false,
                 width: 1920,
                 height: 1080,
               },
@@ -344,17 +297,14 @@ const ParticlesBackground = () => {
                 mode: "delete",
                 value: 0,
               },
-              value: 100,
+              value: 0,
             },
             opacity: {
-              value: {
-                min: 0.3,
-                max: 0.8,
-              },
+              value: 1,
               animation: {
                 count: 0,
-                enable: true,
-                speed: 0.5,
+                enable: false,
+                speed: 2,
                 decay: 0,
                 delay: 0,
                 sync: false,
@@ -382,14 +332,11 @@ const ParticlesBackground = () => {
               type: "circle",
             },
             size: {
-              value: {
-                min: 1,
-                max: 3,
-              },
+              value: 3,
               animation: {
                 count: 0,
-                enable: true,
-                speed: 3,
+                enable: false,
+                speed: 5,
                 decay: 0,
                 delay: 0,
                 sync: false,
@@ -427,27 +374,33 @@ const ParticlesBackground = () => {
             },
             roll: {
               darken: {
-                enable: false,
-                value: 0,
+                enable: true,
+                value: 30,
               },
-              enable: false,
+              enable: true,
               enlighten: {
-                enable: false,
-                value: 0,
+                enable: true,
+                value: 30,
               },
               mode: "vertical",
-              speed: 25,
+              speed: {
+                min: 15,
+                max: 25,
+              },
             },
             tilt: {
-              value: 0,
+              value: {
+                min: 0,
+                max: 360,
+              },
               animation: {
-                enable: false,
-                speed: 0,
+                enable: true,
+                speed: 60,
                 decay: 0,
                 sync: false,
               },
-              direction: "clockwise",
-              enable: false,
+              direction: "random",
+              enable: true,
             },
             twinkle: {
               lines: {
@@ -462,10 +415,13 @@ const ParticlesBackground = () => {
               },
             },
             wobble: {
-              distance: 5,
-              enable: false,
+              distance: 30,
+              enable: true,
               speed: {
-                angle: 50,
+                angle: {
+                  min: -15,
+                  max: 15,
+                },
                 move: 10,
               },
             },
@@ -481,14 +437,17 @@ const ParticlesBackground = () => {
               },
             },
             rotate: {
-              value: 0,
+              value: {
+                min: 0,
+                max: 360,
+              },
               animation: {
-                enable: false,
-                speed: 0,
+                enable: true,
+                speed: 60,
                 decay: 0,
                 sync: false,
               },
-              direction: "clockwise",
+              direction: "random",
               path: false,
             },
             orbit: {
@@ -510,11 +469,11 @@ const ParticlesBackground = () => {
             links: {
               blink: false,
               color: {
-                value: "random",
+                value: "#fff",
               },
               consent: false,
               distance: 100,
-              enable: true,
+              enable: false,
               frequency: 1,
               opacity: 1,
               shadow: {
@@ -547,7 +506,43 @@ const ParticlesBackground = () => {
           style: {},
           themes: [],
           zLayers: 100,
-          emitters: [],
+          emitters: {
+            autoPlay: true,
+            fill: true,
+            life: {
+              wait: false,
+            },
+            rate: {
+              quantity: 10,
+              delay: 0.1,
+            },
+            shape: {
+              options: {},
+              replace: {
+                color: false,
+                opacity: false,
+              },
+              type: "square",
+            },
+            startCount: 0,
+            size: {
+              mode: "percent",
+              height: 0,
+              width: 0,
+            },
+            particles: {
+              links: {
+                enable: false,
+              },
+              shape: {
+                type: "circle",
+              },
+            },
+            position: {
+              x: 50,
+              y: 50,
+            },
+          },
           motion: {
             disable: false,
             reduce: {
