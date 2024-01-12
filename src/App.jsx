@@ -1,100 +1,21 @@
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
-import { motion } from "framer-motion";
-import profilePic from "./assets/developer-pic-2.jpg";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 import ProjectsPage from "./components/ProjectsPage";
+import AboutMe from "./components/AboutMe";
+import SkillsPage from "./components/SkillsPage";
+import ContactPage from "./components/ContactPage";
 
 function App() {
-  const cssVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "-17rem",
-      y: "-5rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const htmlVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "5rem",
-      y: "7rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const jsVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "20rem",
-      y: "-15rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const reactVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "-20rem",
-      y: "15rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const tailwindVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "-18rem",
-      y: "-20rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const githubVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "18rem",
-      y: "20rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
   return (
     <main className="min-h-screen font-mont w-full h-full">
       <Navbar />
       <HomePage />
+      <AboutMe />
+      {/* <SkillsPage /> */}
       <ProjectsPage />
+      <ContactPage />
 
-      {/* {ABOUT ME} */}
-      <section className="w-full min-h-screen">
-        <div className="p-32 flex flex-col items-center justify-center">
+      {/* <div className="p-32 flex flex-col items-center justify-center">
           <div className="py-2 mx-auto flex flex-col items-center justify-center text-center">
             <h1 className="text-8xl font-bold w-full capitalize mb-16 text-center text-slate-200 tracking-[1rem]">
               About Me
@@ -133,8 +54,8 @@ function App() {
                 className="h-auto w-full rounded-[2rem] p-4"
               />
             </div>
-          </div>
-          <div className="w-full mt-10">
+          </div> */}
+      {/* <div className="w-full mt-10">
             <h3 className="text-6xl font-bold w-full capitalize my-16 text-center text-slate-200 tracking-[1rem]">
               Skills
             </h3>
@@ -258,51 +179,7 @@ function App() {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* {Contact Page} */}
-      <section className="w-full min-h-screen p-32">
-        <h1 className="text-8xl font-bold w-full capitalize mb-16 text-center text-slate-200 tracking-[1rem]">
-          Contact
-        </h1>
-        <div className="p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
-          <div>
-            <FaLocationDot className="text-white text-2xl mr-2" />
-          </div>
-          <div>
-            <h3 className="text-xl font-medium text-teal-500">Address</h3>
-            <p className="my-2 rounded-md font-medium text-slate-300 text-2xl">
-              Lahti, Finland
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-10 p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
-          <div>
-            <FaPhoneVolume className="text-white text-2xl mr-2" />
-          </div>
-          <div>
-            <h3 className="text-xl font-medium text-teal-500">Phone number</h3>
-            <p className="my-2 rounded-md font-medium text-slate-300 text-2xl">
-              +(358) 413119700
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-10 p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
-          <div>
-            <MdEmail className="text-white text-2xl mr-2" />
-          </div>
-          <div>
-            <h3 className="text-xl font-medium text-teal-500">Email</h3>
-            <p className="my-2 rounded-md font-medium text-slate-300 text-2xl">
-              Uyenlai6@gmail.com
-            </p>
-          </div>
-        </div>
-      </section>
+          </div> */}
     </main>
   );
 }
