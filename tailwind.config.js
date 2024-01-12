@@ -8,7 +8,7 @@ export default {
       },
       backgroundImage: {
         radialBg:
-          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px)",
+          "repeating-radial-gradient(rgba(0, 0, 0, 0.4) 10px, #12100e 20px, #2b4162 100px)",
       },
     },
   },

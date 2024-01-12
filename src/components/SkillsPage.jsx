@@ -1,83 +1,86 @@
 import Layout from "./Layout";
+import Skill from "./Skill";
 import { motion } from "framer-motion";
 
 export default function SkillsPage() {
-  const cssVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "-17rem",
-      y: "-5rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
+  return (
+    <Layout className="">
+      <h1 className="text-8xl font-bold w-full capitalize text-center text-slate-200 tracking-[1rem]">
+        Skills
+      </h1>
+      <div className="relative bg-radialBg rounded-full w-full h-screen flex items-center justify-center">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="absolute cursor-pointer rounded-full font-semibold w-max py-6 px-8 bg-slate-200 text-xl text-slate-800 flex justify-center items-center"
+        >
+          <p>Front End</p>
+        </motion.div>
+        <Skill title="HTML" x="12vw" y="4vw" />
+        <Skill title="CSS" x="-8vw" y="-8vw" />
+        <Skill title="Javascript" x="-15vw" y="10vw" />
+        <Skill title="ReactJS" x="17vw" y="-15vw" />
+        <Skill title="Tailwind" x="20vw" y="18vw" />
+        <Skill title="Github" x="-22vw" y="-20vw" />
+      </div>
 
-  const htmlVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "5rem",
-      y: "7rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const jsVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "20rem",
-      y: "-15rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const reactVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "-20rem",
-      y: "15rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const tailwindVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "-18rem",
-      y: "-20rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-
-  const githubVariants = {
-    initial: {
-      position: "absolute",
-    },
-    animate: {
-      x: "18rem",
-      y: "20rem",
-      transition: {
-        duration: 1.5,
-      },
-    },
-  };
-  return <Layout>Skills</Layout>;
+      <div className="w-full mt-[12rem]">
+        <h3 className="text-6xl font-bold w-full capitalize my-16 text-center text-slate-200 tracking-[1rem]">
+          Education
+        </h3>
+        <div className="flex  items-stretch gap-10 justify-center mt-10">
+          <div className="flex flex-col gap-2 text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+            <h3 className="capitalize font-bold text-2xl text-teal-500">
+              LAB UAS
+            </h3>
+            <span className="capitalize text font-medium text-[#EDEADE]">
+              2021-present | Student
+            </span>
+            <p className="font-medium w-full text-slate-300 text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              dolorum in suscipit voluptatibus dolorem neque asperiores
+              quibusdam, necessitatibus totam est fugiat. Aliquid quam omnis at
+              aperiam! Incidunt modi sint corrupti.
+            </p>
+          </div>
+          <div className="text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+            <h3 className="capitalize font-bold text-2xl text-teal-500">
+              Certificates
+            </h3>
+            <ul className="mt-5">
+              <li className="my-3 w-full flex gap-2 justify-center items-center">
+                <a
+                  href="https://www.udemy.com/certificate/UC-7d69c860-9d0a-47a2-9a33-2154b1f4c00f/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EDEADE] text-2xl ring-offset-2 hover:underline"
+                >
+                  React Course
+                </a>
+              </li>
+              <li className="my-3 w-full flex gap-2 justify-center items-center">
+                <a
+                  href="https://www.udemy.com/certificate/UC-7d69c860-9d0a-47a2-9a33-2154b1f4c00f/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EDEADE] text-2xl ring-offset-2 hover:underline"
+                >
+                  Javascript Course
+                </a>
+              </li>
+              <li className="my-3 w-full flex gap-2 justify-center items-center">
+                <a
+                  href="https://www.udemy.com/certificate/UC-7d69c860-9d0a-47a2-9a33-2154b1f4c00f/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EDEADE] text-2xl ring-offset-2 hover:underline"
+                >
+                  CSS Course
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
 }
