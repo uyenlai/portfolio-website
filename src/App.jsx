@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 import projectImg from "./assets/fashion-studio-website.jpg";
 import profilePic from "./assets/developer-pic-2.jpg";
 import { BsGithub } from "react-icons/bs";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 function App() {
   const textVariants = {
@@ -489,7 +492,7 @@ function App() {
               Education
             </h3>
             <div className="flex  items-stretch gap-10 justify-center mt-10">
-              <div className="flex flex-col gap-2 bg-gray-500 text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+              <div className="flex flex-col gap-2 text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
                 <h3 className="capitalize font-bold text-2xl text-teal-500">
                   LAB UAS
                 </h3>
@@ -503,7 +506,7 @@ function App() {
                   at aperiam! Incidunt modi sint corrupti.
                 </p>
               </div>
-              <div className="bg-gray-500 text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+              <div className="text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
                 <h3 className="capitalize font-bold text-2xl text-teal-500">
                   Certificates
                 </h3>
@@ -541,6 +544,48 @@ function App() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* {Contact Page} */}
+      <section className="w-full min-h-screen p-32">
+        <h1 className="text-8xl font-bold w-full capitalize mb-16 text-center text-slate-200 tracking-[1rem]">
+          Contact
+        </h1>
+        <div className="p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+          <div>
+            <FaLocationDot className="text-white text-2xl mr-2" />
+          </div>
+          <div>
+            <h3 className="text-xl font-medium text-teal-500">Address</h3>
+            <p className="my-2 rounded-md font-medium text-slate-300 text-2xl">
+              Lahti, Finland
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+          <div>
+            <FaPhoneVolume className="text-white text-2xl mr-2" />
+          </div>
+          <div>
+            <h3 className="text-xl font-medium text-teal-500">Phone number</h3>
+            <p className="my-2 rounded-md font-medium text-slate-300 text-2xl">
+              +(358) 413119700
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+          <div>
+            <MdEmail className="text-white text-2xl mr-2" />
+          </div>
+          <div>
+            <h3 className="text-xl font-medium text-teal-500">Email</h3>
+            <p className="my-2 rounded-md font-medium text-slate-300 text-2xl">
+              Uyenlai6@gmail.com
+            </p>
           </div>
         </div>
       </section>

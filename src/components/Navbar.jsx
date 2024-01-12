@@ -31,6 +31,14 @@ const Navbar = () => {
           variants={variants}
         ></motion.div>
       </motion.li>
+
+      <motion.li className="text-xl relative w-full" whileHover="hover">
+        <a href="/projects">Contact</a>
+        <motion.div
+          className="h-[0.5px] bg-white absolute"
+          variants={variants}
+        ></motion.div>
+      </motion.li>
     </nav>
   );
 };
