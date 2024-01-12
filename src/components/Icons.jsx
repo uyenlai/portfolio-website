@@ -3,12 +3,12 @@ import { BsMoonStarsFill } from "react-icons/bs";
 import { BsSunFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-const Icons = () => {
+export default function Icons() {
   return (
-    <div className="flex justify-center items-center gap-8">
+    <div className="sm:flex justify-center items-center sm:gap-8 hidden">
       <motion.li
-        className="list-none w-8 h-8 flex justify-center items-center rounded-full bg-slate-200 text-black"
-        whileHover={{ y: -5, scale: 1.1 }}
+        className="list-none sm:w-8 sm:h-8 flex justify-center items-center rounded-full bg-slate-200 text-black"
+        whileHover={{ y: -5, scale: 1.05 }}
       >
         <a
           href="https://github.com/uyenlai"
@@ -26,6 +26,4 @@ const Icons = () => {
       </button>
     </div>
   );
-};
-
-export default Icons;
+}

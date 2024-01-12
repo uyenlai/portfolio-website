@@ -15,9 +15,9 @@ const Logo = () => {
         border: "none",
         transition: { duration: 1.5, repeat: Infinity },
       }}
-      className="w-24 h-24 rounded-full border-2 border-teal-700 border-solid flex justify-center items-center cursor-pointer"
+      className="w-16 h-16 rounded-full border-2 border-teal-700 border-solid flex justify-center items-center cursor-pointer"
     >
-      <a href="/" className="text-2xl text-white font-bold">
+      <a href="#" className="text-2xl text-white font-bold">
         UL
       </a>
     </motion.div>

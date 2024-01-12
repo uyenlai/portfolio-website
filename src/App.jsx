@@ -1,5 +1,3 @@
-import Icons from "./components/Icons";
-import Logo from "./components/Logo";
 import Navbar from "./components/Navbar";
 import profileImg from "./assets/developer-pic-1.png";
 import { motion } from "framer-motion";
@@ -105,15 +103,9 @@ function App() {
   };
 
   return (
-    <main className="min-h-screen">
-      {/* {NAVBAR} */}
-      <header className="flex items-center justify-between w-full px-32 py-8 font-medium text-slate-200">
-        <Navbar />
-        <Logo />
-        <Icons />
-      </header>
+    <main className="min-h-screen font-mont w-full h-full">
+      <Navbar />
 
-      {/* {HOMEPAGE} */}
       <section className="flex items-center justify-center min-h-screen mt-[160px]">
         <div className="h-full w-full p-32 !pt-0 flex justify-between items-start">
           <div className="basis-1/2">
