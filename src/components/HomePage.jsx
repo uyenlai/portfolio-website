@@ -23,7 +23,7 @@ export default function HomePage() {
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="text-white w-full flex-col gap-2 items-center self-center text-left"
+        className="text-white w-full flex-col gap-2 items-center justify-center self-center text-left"
       >
         <motion.h1
           variants={textVariants}
@@ -49,7 +49,7 @@ export default function HomePage() {
           animate="animate"
           className="flex justify-center gap-5 mt-10"
         >
-          <Button title="Resume" />
+          <Button title="Resume" className="mr-[5rem]" />
           <motion.a
             variants={textVariants}
             initial="initial"
