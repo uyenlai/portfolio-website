@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "./Layout";
 import Button from "./Button";
+import { Link } from "react-scroll";
 
 export default function HomePage() {
   const textVariants = {
@@ -18,7 +19,7 @@ export default function HomePage() {
     },
   };
   return (
-    <Layout>
+    <Layout id="#">
       <motion.div
         variants={textVariants}
         initial="initial"
@@ -50,7 +51,7 @@ export default function HomePage() {
           className="flex justify-center gap-5 mt-10"
         >
           <Button title="Resume" className="mr-[5rem]" />
-          <motion.a
+          <motion.p
             variants={textVariants}
             initial="initial"
             animate="animate"
@@ -60,8 +61,18 @@ export default function HomePage() {
               transition: { duration: 1, repeat: Infinity },
             }}
           >
-            Contact me!
-          </motion.a>
+            <Link
+              to="#contact"
+              smooth
+              duration={1500}
+              activeClass="active"
+              onSetActive={(to) => {
+                console.log(to);
+              }}
+            >
+              Contact me!
+            </Link>
+          </motion.p>
         </motion.div>
       </motion.div>
     </Layout>

@@ -3,13 +3,8 @@ import profilePic from "../assets/developer-pic-2.jpg";
 
 export default function AboutMe() {
   return (
-    <Layout>
+    <Layout id="#about" title="About me" >
       <div className="flex flex-col items-center justify-center">
-        <div className="py-2 mx-auto flex flex-col items-center justify-center text-center">
-          <h1 className="text-8xl font-bold w-full capitalize mb-16 text-center text-slate-200 tracking-[1rem]">
-            About Me
-          </h1>
-        </div>
         <div className="flex gap-16 justify-center items-center w-full">
           <div className="flex flex-col items-start justify-start basis-1/2">
             <h3 className="mb-4 text-lg font-bold uppercase text-[#EDEADE]">

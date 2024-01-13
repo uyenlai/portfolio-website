@@ -5,10 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function ContactPage() {
   return (
-    <Layout>
-      <h1 className="text-8xl font-bold w-full capitalize mb-16 text-center text-slate-200 tracking-[1rem]">
-        Contact
-      </h1>
+    <Layout id="#contact" title="Contact">
       <div className="p-10 flex items-center justify-start gap-4 overflow-hidden rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
         <div>
           <FaLocationDot className="text-white text-2xl mr-2" />

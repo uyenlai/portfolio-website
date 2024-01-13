@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Logo = () => {
   return (
@@ -17,9 +18,18 @@ const Logo = () => {
       }}
       className="w-16 h-16 rounded-full border-2 border-teal-700 border-solid flex justify-center items-center cursor-pointer"
     >
-      <a href="#" className="text-2xl text-white font-bold">
+      <Link
+        to="#"
+        smooth
+        duration={1500}
+        activeClass="active"
+        onSetActive={(to) => {
+          console.log(to);
+        }}
+        className="text-2xl text-white font-bold"
+      >
         UL
-      </a>
+      </Link>
     </motion.div>
   );
 };

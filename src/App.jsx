@@ -7,7 +7,7 @@ import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
-    <main className="min-h-screen font-mont w-full h-full">
+    <main className="min-h-screen font-mont w-full h-full relative">
       <Navbar />
       <HomePage />
       <AboutMe />
