@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Layout from "../components/Layout";
 import Button from "../components/Button";
 import { Link } from "react-scroll";
 
@@ -20,12 +19,12 @@ export default function HomePage() {
   };
 
   return (
-    <Layout id="#">
+    <div id="#" className="w-full min-h-screen py-24 px-32 relative">
       <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="w-full flex-col gap-2 items-center justify-center self-center text-left"
+        className="w-full flex-col gap-2 items-center justify-center self-center text-left dark:text-white"
       >
         <motion.h1
           variants={textVariants}
@@ -68,6 +67,6 @@ export default function HomePage() {
           </motion.p>
         </motion.div>
       </motion.div>
-    </Layout>
+    </div>
   );
 }

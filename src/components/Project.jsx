@@ -30,9 +30,10 @@ export default function Project({ href, title, para, src }) {
           <h2 className="my-2 w-full text-left text-4xl font-bold text-teal-500">
             {title}
           </h2>
-          <p className="my-2 rounded-md font-medium">{para}</p>
+          <p className="my-2 rounded-md font-medium dark:text-white">{para}</p>
           <div className="flex gap-4 items-center mt-2">
             <motion.a
+              className="dark:text-white dark:bg-black rounded-full"
               href="https://github.com/uyenlai"
               target="_blank"
               rel="noopener noreferrer"

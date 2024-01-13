@@ -14,27 +14,27 @@ export default function Navbar() {
         <NavItem
           title="Home"
           href="#"
-          className="text-xl relative w-full cursor-pointer"
+          className="text-xl relative w-full cursor-pointer dark:text-white"
         />
         <NavItem
           title="About"
           href="#about"
-          className="text-xl relative w-full cursor-pointer"
+          className="text-xl relative w-full cursor-pointer dark:text-white"
         />
         <NavItem
           title="Skills"
           href="#skills"
-          className="text-xl relative w-full cursor-pointer"
+          className="text-xl relative w-full cursor-pointer dark:text-white"
         />
         <NavItem
           title="Projects"
           href="#projects"
-          className="text-xl relative w-full cursor-pointer"
+          className="text-xl relative w-full cursor-pointer dark:text-white"
         />
         <NavItem
           title="Contact"
           href="#contact"
-          className="text-xl relative w-full cursor-pointer"
+          className="text-xl relative w-full cursor-pointer dark:text-white"
         />
       </ul>
       <Icons />

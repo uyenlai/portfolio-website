@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <Layout id="#about" title="About me">
       <div className="flex flex-col items-center justify-center">
-        <div className="flex gap-16 justify-center items-center w-full">
+        <div className="flex gap-16 justify-center items-center w-full dark:text-white ">
           <div className="flex flex-col items-start justify-start basis-1/2">
             <h3 className="mb-4 text-lg font-bold uppercase">Biography</h3>
             <p className="font-medium">

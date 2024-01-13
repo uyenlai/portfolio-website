@@ -16,7 +16,7 @@ export default function NavItem({ href, title, className = "" }) {
         {title}
       </Link>
       <motion.div
-        className="h-[0.5px] bg-black absolute"
+        className="h-[0.5px] bg-black dark:bg-white absolute"
         variants={variants}
       ></motion.div>
     </motion.li>
