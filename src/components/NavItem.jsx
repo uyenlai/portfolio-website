@@ -12,12 +12,11 @@ export default function NavItem({ href, title, className = "" }) {
         to={href}
         smooth
         duration={1500}
-        offset={32}
       >
         {title}
       </Link>
       <motion.div
-        className="h-[0.5px] bg-white absolute"
+        className="h-[0.5px] bg-black absolute"
         variants={variants}
       ></motion.div>
     </motion.li>

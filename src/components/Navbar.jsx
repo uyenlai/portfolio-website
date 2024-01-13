@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between w-full px-20 py-8 font-medium text-slate-200">
+    <nav className="flex items-center justify-between w-full px-20 py-8 font-medium">
       <div className="sm:hidden absolute left-0 ml-10">
         <GiHamburgerMenu />
       </div>

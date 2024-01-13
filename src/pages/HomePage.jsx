@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Layout from "./Layout";
-import Button from "./Button";
+import Layout from "../components/Layout";
+import Button from "../components/Button";
 import { Link } from "react-scroll";
 
 export default function HomePage() {
@@ -18,13 +18,14 @@ export default function HomePage() {
       },
     },
   };
+
   return (
     <Layout id="#">
       <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="text-white w-full flex-col gap-2 items-center justify-center self-center text-left"
+        className="w-full flex-col gap-2 items-center justify-center self-center text-left"
       >
         <motion.h1
           variants={textVariants}
@@ -38,7 +39,7 @@ export default function HomePage() {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="my-4 text-xl font-medium text-slate-400 mb-10 tracking-wide"
+          className="my-4 text-xl font-medium mb-10 tracking-wide"
         >
           As a skilled full-stack developer, I am dedicated to turning ideas
           into innovative web applications. Explore my latest projects and
@@ -55,21 +56,13 @@ export default function HomePage() {
             variants={textVariants}
             initial="initial"
             animate="animate"
-            className="basis-1/4 text-xl p-2 font-semibold capitalize text-slate-50 cursor-pointer"
+            className="basis-1/4 text-xl p-2 font-semibold capitalize cursor-pointer"
             whileHover={{
               scale: 1.1,
               transition: { duration: 1, repeat: Infinity },
             }}
           >
-            <Link
-              to="#contact"
-              smooth
-              duration={1500}
-              activeClass="active"
-              onSetActive={(to) => {
-                console.log(to);
-              }}
-            >
+            <Link to="#contact" smooth duration={1500}>
               Contact me!
             </Link>
           </motion.p>

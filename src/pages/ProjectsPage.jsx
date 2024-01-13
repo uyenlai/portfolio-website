@@ -1,6 +1,6 @@
-import Layout from "./Layout";
-import Project from "./Project";
-import projectImg from "../assets/fashion-studio-website.jpg";
+import Layout from "../components/Layout";
+import Project from "../components/Project";
+import projectImg from "/fashion-studio-website.jpg";
 
 export default function ProjectsPage() {
   return (

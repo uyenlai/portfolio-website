@@ -16,17 +16,14 @@ const Logo = () => {
         border: "none",
         transition: { duration: 1.5, repeat: Infinity },
       }}
-      className="w-16 h-16 rounded-full border-2 border-teal-700 border-solid flex justify-center items-center cursor-pointer"
+      className="w-16 h-16 rounded-full bg-black flex justify-center items-center cursor-pointer"
     >
       <Link
         to="#"
         smooth
         duration={1500}
         activeClass="active"
-        onSetActive={(to) => {
-          console.log(to);
-        }}
-        className="text-2xl text-white font-bold"
+        className="text-2xl font-bold text-white"
       >
         UL
       </Link>

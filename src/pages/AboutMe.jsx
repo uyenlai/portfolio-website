@@ -1,30 +1,27 @@
-import Layout from "./Layout";
-import profilePic from "../assets/developer-pic-2.jpg";
+import Layout from "../components/Layout";
+import profilePic from "/developer-pic-2.jpg";
 
 export default function AboutMe() {
   return (
-    <Layout id="#about" title="About me" >
+    <Layout id="#about" title="About me">
       <div className="flex flex-col items-center justify-center">
         <div className="flex gap-16 justify-center items-center w-full">
           <div className="flex flex-col items-start justify-start basis-1/2">
-            <h3 className="mb-4 text-lg font-bold uppercase text-[#EDEADE]">
-              Biography
-            </h3>
-            <p className="font-medium text-slate-300">
-              Hi! My name is{" "}
-              <strong className="text-[#EDEADE]">Uyen Lai</strong>. Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Aliquid repellendus
-              doloremque illo nam magni totam deserunt, eum, quia unde doloribus
-              quas commodi praesentium fugiat. Ipsum officia dolore inventore
-              libero exercitationem!
+            <h3 className="mb-4 text-lg font-bold uppercase">Biography</h3>
+            <p className="font-medium">
+              Hi! My name is <strong>Uyen Lai</strong>. Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Aliquid repellendus doloremque
+              illo nam magni totam deserunt, eum, quia unde doloribus quas
+              commodi praesentium fugiat. Ipsum officia dolore inventore libero
+              exercitationem!
             </p>
-            <p className="my-4 font-medium text-slate-300">
+            <p className="my-4 font-medium">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
               repellendus doloremque illo nam magni totam deserunt, eum, quia
               unde doloribus quas commodi praesentium fugiat. Ipsum officia
               dolore inventore libero exercitationem!
             </p>
-            <p className="font-medium text-slate-300">
+            <p className="font-medium">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
               repellendus doloremque illo nam magni totam deserunt, eum, quia
               unde doloribus quas commodi praesentium fugiat. Ipsum officia

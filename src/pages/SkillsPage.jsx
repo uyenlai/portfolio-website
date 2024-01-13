@@ -1,14 +1,15 @@
-import Layout from "./Layout";
-import Skill from "./Skill";
+import Layout from "../components/Layout";
+import Skill from "../components/Skill";
 import { motion } from "framer-motion";
+//  bg-radialBg : dark mode radial bg
 
 export default function SkillsPage() {
   return (
     <Layout id="#skills" className="" title="Skills">
-      <div className="relative bg-radialBg mx-auto rounded-full w-3/4 h-[500px] flex items-center justify-center">
+      <div className="relative bg-lightRadialBg mx-auto rounded-full w-3/4 h-[500px] flex items-center justify-center">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="absolute cursor-pointer rounded-full font-semibold w-max p-4 bg-slate-200 text-xl text-slate-800 flex justify-center items-center"
+          className="absolute cursor-pointer rounded-full font-semibold w-max p-4 bg-black text-white text-xl flex justify-center items-center"
         >
           <p>Front End</p>
         </motion.div>
@@ -21,25 +22,25 @@ export default function SkillsPage() {
       </div>
 
       <div className="w-full">
-        <h3 className="text-6xl font-bold w-full capitalize my-16 text-center text-slate-200 tracking-[1rem]">
+        <h3 className="text-6xl font-bold w-full capitalize my-16 text-center tracking-[1rem]">
           Education
         </h3>
         <div className="flex items-stretch gap-10 justify-center mt-10">
-          <div className="flex flex-col gap-2 text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+          <div className="flex flex-col gap-2 text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid border-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
             <h3 className="capitalize font-bold text-2xl text-teal-500">
               LAB UAS
             </h3>
             <span className="capitalize text font-medium text-[#EDEADE]">
               2021-present | Student
             </span>
-            <p className="font-medium w-full text-slate-300 text-left">
+            <p className="font-medium w-full text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               dolorum in suscipit voluptatibus dolorem neque asperiores
               quibusdam, necessitatibus totam est fugiat. Aliquid quam omnis at
               aperiam! Incidunt modi sint corrupti.
             </p>
           </div>
-          <div className="text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
+          <div className="text-center p-8 basis-1/2 rounded-3xl rounded-br-2xl border border-solid border-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)]">
             <h3 className="capitalize font-bold text-2xl text-teal-500">
               Certificates
             </h3>
@@ -49,7 +50,7 @@ export default function SkillsPage() {
                   href="https://www.udemy.com/certificate/UC-7d69c860-9d0a-47a2-9a33-2154b1f4c00f/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#EDEADE] text-2xl ring-offset-2 hover:underline"
+                  className="text-2xl ring-offset-2 hover:underline"
                 >
                   React Course
                 </a>
@@ -59,7 +60,7 @@ export default function SkillsPage() {
                   href="https://www.udemy.com/certificate/UC-7d69c860-9d0a-47a2-9a33-2154b1f4c00f/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#EDEADE] text-2xl ring-offset-2 hover:underline"
+                  className="text-2xl ring-offset-2 hover:underline"
                 >
                   Javascript Course
                 </a>
@@ -69,7 +70,7 @@ export default function SkillsPage() {
                   href="https://www.udemy.com/certificate/UC-7d69c860-9d0a-47a2-9a33-2154b1f4c00f/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#EDEADE] text-2xl ring-offset-2 hover:underline"
+                  className="text-2xl ring-offset-2 hover:underline"
                 >
                   CSS Course
                 </a>

@@ -7,8 +7,10 @@ export default {
         mont: ['"Montserrat"', "sans-serif"],
       },
       backgroundImage: {
-        radialBg:
+        darkRadialBg:
           "repeating-radial-gradient(rgba(0, 0, 0, 0.4) 10px, #12100e 20px, #2b4162 100px)",
+        lightRadialBg:
+          "repeating-radial-gradient(rgba(0,0,0,.4) 2px, rgb(214, 219, 220) 2px, rgb(255, 255, 255) 105px)",
       },
     },
   },

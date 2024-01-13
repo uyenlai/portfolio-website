@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 export default function Project({ href, title, para, src }) {
   return (
     <div className="flex flex-col gap-y-20">
-      <div className="w-full flex-col items-center justify-center rounded-3xl rounded-br-2xl border border-solid border-l-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)] overflow-hidden">
+      <div className="w-full flex-col items-center justify-center rounded-3xl rounded-br-2xl border border-solid border-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)] overflow-hidden">
         <a
           href={href}
           target="_blank"
@@ -30,13 +30,12 @@ export default function Project({ href, title, para, src }) {
           <h2 className="my-2 w-full text-left text-4xl font-bold text-teal-500">
             {title}
           </h2>
-          <p className="my-2 rounded-md font-medium text-slate-300">{para}</p>
+          <p className="my-2 rounded-md font-medium">{para}</p>
           <div className="flex gap-4 items-center mt-2">
             <motion.a
               href="https://github.com/uyenlai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white"
               whileHover={{
                 opacity: 0.8,
                 scale: 1.2,

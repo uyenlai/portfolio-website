@@ -18,9 +18,10 @@ export default function Skill({ title, x, y }) {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="absolute cursor-pointer rounded-full font-semibold w-max py-3 px-4 bg-slate-200 text-xl text-slate-800 flex justify-center items-center"
+      className="absolute cursor-pointer rounded-full font-semibold w-max py-3 px-4 bg-black text-white text-xl flex justify-center items-center"
       initial="initial"
       whileInView="animate"
+      viewport={{ once: true }}
       variants={variants}
     >
       <p>{title}</p>
