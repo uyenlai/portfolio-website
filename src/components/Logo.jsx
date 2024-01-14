@@ -16,7 +16,7 @@ const Logo = () => {
         border: "none",
         transition: { duration: 1.5, repeat: Infinity },
       }}
-      className="w-16 h-16 rounded-full dark:border dark:border-solid dark:border-white bg-black flex justify-center items-center cursor-pointer"
+      className=" w-16 h-16 rounded-full dark:border dark:border-solid dark:border-white bg-black flex justify-center items-center cursor-pointer"
     >
       <Link
         to="#"

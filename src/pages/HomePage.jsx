@@ -19,18 +19,18 @@ export default function HomePage() {
   };
 
   return (
-    <div id="#" className="w-full min-h-screen py-24 px-32 relative">
+    <div id="#" className="w-full px-6 py-32 min-h-screen lg:py-24 lg:px-32 md:flex md:justify-center md:items-center md:px-20 relative ">
       <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="w-full flex-col gap-2 items-center justify-center self-center text-left dark:text-white"
+        className="w-full flex-col lg:gap-2 items-center justify-center self-center text-left dark:text-white"
       >
         <motion.h1
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="py-2 text-center mx-auto font-extrabold from-stone-100 text-6xl mb-10"
+          className="lg:py-2 text-center text-4xl md:text-6xl mx-auto font-extrabold from-stone-100 lg:text-7xl lg:mb-10 sm:mb-10 md:mb-30"
         >
           Turning Vision Into Reality With Code And Design.
         </motion.h1>
@@ -38,7 +38,7 @@ export default function HomePage() {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="my-4 text-xl font-medium mb-10 tracking-wide"
+          className="my-4 text-sm lg:text-xl md:text-xl font-medium mb-10 md:mb-20 tracking-wide"
         >
           As a skilled full-stack developer, I am dedicated to turning ideas
           into innovative web applications. Explore my latest projects and
@@ -48,14 +48,14 @@ export default function HomePage() {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="flex justify-center gap-5 mt-10"
+          className="flex justify-center gap-5 mt-10 md:gap-x-10 md:items-center"
         >
-          <Button title="Resume" className="mr-[5rem]" />
+          <Button title="Resume" className="lg:mr-[5rem] md:text-xl md:py-4 md:px-12" />
           <motion.p
             variants={textVariants}
             initial="initial"
             animate="animate"
-            className="basis-1/4 text-xl p-2 font-semibold capitalize cursor-pointer"
+            className="basis-1/4 text-xs lg:text-xl md:text-xl p-2 font-semibold capitalize cursor-pointer"
             whileHover={{
               scale: 1.1,
               transition: { duration: 1, repeat: Infinity },

@@ -5,7 +5,7 @@ export default function Icons() {
   return (
     <div className="sm:flex justify-center items-center sm:gap-8 hidden">
       <motion.li
-        className="list-none sm:w-8 sm:h-8 flex justify-center items-center rounded-full bg-slate-200 text-black dark:text-white dark:bg-black"
+        className="list-none sm:w-8 sm:h-8 hidden lg:flex justify-center items-center rounded-full bg-slate-200 text-black dark:text-white dark:bg-black"
         whileHover={{ y: -5, scale: 1.05 }}
       >
         <a
