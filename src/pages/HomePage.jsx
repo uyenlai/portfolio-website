@@ -68,7 +68,7 @@ export default function HomePage() {
             variants={textVariants}
             initial="initial"
             animate="animate"
-            className="basis-1/4 text-xs lg:text-xl md:text-xl p-2 font-semibold capitalize cursor-pointer"
+            className="text-xs lg:text-xl md:text-xl p-2 font-semibold capitalize cursor-pointer"
             whileHover={{
               scale: 1.1,
               transition: { duration: 1, repeat: Infinity },

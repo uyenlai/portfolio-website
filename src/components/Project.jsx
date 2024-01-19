@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 import { BsGithub } from "react-icons/bs";
 
-export default function Project({ title, para, src }) {
+export default function Project({ title, para, src, href }) {
   return (
     <div className="flex flex-col gap-y-20">
       <div className="w-full flex-col items-center justify-center rounded-3xl rounded-br-2xl border border-solid border-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)] overflow-hidden">
@@ -31,24 +31,12 @@ export default function Project({ title, para, src }) {
             {para}
           </p>
           <div className="flex gap-4 items-center mt-2">
-            <motion.a
-              className="dark:text-white dark:bg-black rounded-full"
-              href="https://github.com/uyenlai"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{
-                opacity: 0.8,
-                scale: 1.2,
-                transition: {
-                  duration: 0.3,
-                },
-              }}
-            >
+            <p className="dark:text-white dark:bg-black rounded-full">
               <BsGithub className="lg:w-8 lg:h-8 w-5 h-5 md:w-8 md:h-8" />
-            </motion.a>
+            </p>
             <motion.a
               className="rounded-lg bg-slate-200 text-lg font-semibold text-slate-800"
-              href="https://github.com/uyenlai"
+              href={href}
               rel="noopener noreferrer"
               whileHover={{
                 scale: 1.05,
