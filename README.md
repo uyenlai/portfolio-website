@@ -1,8 +1,5 @@
-# React + Vite
+# A responsive personal website using React, Tailwind CSS, and Framer Motion.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Implemented a modern design and interactive features to showcase projects and skills. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit my portfolio on Netlify: 
