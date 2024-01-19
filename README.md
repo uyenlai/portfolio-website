@@ -2,4 +2,4 @@
 
 Implemented a modern design and interactive features to showcase projects and skills. 
 
-Visit my portfolio on Netlify: 
+Visit my portfolio on Netlify: https://uyenlai-portfolio.netlify.app/
