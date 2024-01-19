@@ -37,6 +37,7 @@ export default function Project({ title, para, src, href }) {
             <motion.a
               className="rounded-lg bg-slate-200 text-lg font-semibold text-slate-800"
               href={href}
+              target="_blank"
               rel="noopener noreferrer"
               whileHover={{
                 scale: 1.05,

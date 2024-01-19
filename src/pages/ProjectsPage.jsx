@@ -39,7 +39,7 @@ export default function ProjectsPage() {
           <Project
             title="Events Page"
             src={eventsPage}
-            para="Experience seamless event management on my simple Events Page since I focused on the authentication feature the most. Users can effortlessly create a new account or log in, unlocking exclusive privileges. Authenticated users gain the ability to modify or delete events, ensuring a personalized experience. Backend data was retrieved from a Udemy React course I had studied."
+            para="Experience seamless event management on my simple Events Page. Users can effortlessly create a new account or log in, unlocking exclusive privileges. Authenticated users gain the ability to modify or delete events, ensuring a personalized experience. The streamlined design, with a focus on authentication, allows users to enjoy the platform's functionality while backend data retrieval ensures up-to-date and dynamic content from the online source."
             href="https://github.com/uyenlai/events-page"
           />
         </div>

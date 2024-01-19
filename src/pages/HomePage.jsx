@@ -34,19 +34,19 @@ export default function HomePage() {
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="lg:py-2 text-center text-4xl md:text-6xl mx-auto font-extrabold from-stone-100 lg:text-7xl lg:mb-10 sm:mb-10 md:mb-30"
+          className="lg:py-2 text-center text-4xl md:text-5xl mx-auto font-extrabold from-stone-100 lg:text-7xl lg:mb-8 sm:mb-10 md:mb-30"
         >
-          Turning Vision Into Reality With Code And Design.
+          Welcome to my portfolio!
         </motion.h1>
         <motion.p
           variants={textVariants}
           initial="initial"
           animate="animate"
-          className="my-4 text-sm lg:text-xl md:text-xl font-medium mb-10 md:mb-20 tracking-wide"
+          className="my-4 text-sm py-20 lg:text-2xl text-center md:text-lg font-medium mb-10 md:mb-20 tracking-wide"
         >
-          As a skilled full-stack developer, I am dedicated to turning ideas
-          into innovative web applications. Explore my latest projects and
-          articles, showcasing my expertise in React.js and web development.
+          Join me on this digital odyssey, where lines of code transform
+          aspirations into accomplishments, passion fuels progress, and each
+          project is a testament to the limitless possibilities of technology.
         </motion.p>
         <motion.div
           variants={textVariants}
@@ -54,11 +54,7 @@ export default function HomePage() {
           animate="animate"
           className="flex justify-center gap-5 mt-10 md:gap-x-10 md:items-center"
         >
-          <a
-            href={resume}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={resume} target="_blank" rel="noopener noreferrer">
             <Button
               title="Resume"
               className="md:text-xl md:py-4 md:px-12 lg:px-10 lg:py-3 px-7 py-2"
