@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import { Link } from "react-scroll";
-import resume from "/UyenLai - Resume.pdf";
+import resume from "/Uyen Lai - Resume.pdf";
 
 export default function HomePage() {
   const textVariants = {
