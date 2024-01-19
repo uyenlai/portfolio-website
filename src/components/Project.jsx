@@ -2,20 +2,17 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 import { BsGithub } from "react-icons/bs";
 
-export default function Project({ href, title, para, src }) {
+export default function Project({ title, para, src }) {
   return (
     <div className="flex flex-col gap-y-20">
       <div className="w-full flex-col items-center justify-center rounded-3xl rounded-br-2xl border border-solid border-cyan-900 shadow-[-2px_-2px_30px_2px_rgba(255,255,255,0.5),_20px_20px_30px_4px_rgba(45,78,255,0.15)] overflow-hidden">
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cursor-pointer overflow-hidden rounded-lg"
-        >
-          <motion.img
-            src={src}
-            alt={title}
+        <a className="cursor-pointer overflow-hidden rounded-lg ">
+          <motion.video
             className="h-auto w-full rounded-[2rem] p-5"
+            src={src}
+            autoPlay
+            loop
+            controls
             whileHover={{
               opacity: 0.9,
               scale: 1.01,
@@ -60,7 +57,10 @@ export default function Project({ href, title, para, src }) {
                 },
               }}
             >
-              <Button title="Visit project" className="p-2 md:px-4 md:py-2 md:text-lg" />
+              <Button
+                title="Visit project"
+                className="p-2 md:px-4 md:py-2 md:text-lg"
+              />
             </motion.a>
           </div>
         </div>

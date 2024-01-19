@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import { Link } from "react-scroll";
+import resume from "/UyenLai - Resume.pdf";
 
 export default function HomePage() {
   const textVariants = {
@@ -19,7 +20,10 @@ export default function HomePage() {
   };
 
   return (
-    <div id="#" className="w-full px-6 py-32 min-h-screen lg:py-24 lg:px-32 md:flex md:justify-center md:items-center md:px-20 relative ">
+    <div
+      id="#"
+      className="w-full px-6 py-32 min-h-screen lg:py-24 lg:px-32 md:flex md:justify-center md:items-center md:px-20 relative "
+    >
       <motion.div
         variants={textVariants}
         initial="initial"
@@ -50,7 +54,16 @@ export default function HomePage() {
           animate="animate"
           className="flex justify-center gap-5 mt-10 md:gap-x-10 md:items-center"
         >
-          <Button title="Resume" className="lg:mr-[5rem] md:text-xl md:py-4 md:px-12" />
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              title="Resume"
+              className="md:text-xl md:py-4 md:px-12 lg:px-10 lg:py-3 px-7 py-2"
+            />
+          </a>
           <motion.p
             variants={textVariants}
             initial="initial"
