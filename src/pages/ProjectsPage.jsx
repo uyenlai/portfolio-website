@@ -39,7 +39,7 @@ export default function ProjectsPage() {
           <Project
             title="Events Page"
             src={eventsPage}
-            para="Experience seamless event management on Events Page. Users can effortlessly create a new account or log in, unlocking exclusive privileges. Authenticated users gain the ability to create, modify or delete events, ensuring a personalized experience. The streamlined design allows users to enjoy the platform's functionality while backend data retrieval ensures up-to-date and dynamic content from Firebase."
+            para="Experience seamless event management on Events Page. Users can effortlessly create a new account or log in, unlocking exclusive privileges. Authenticated users gain the ability to create, modify or delete events, ensuring a personalized experience. The streamlined design allows users to enjoy the platform's functionality. Built with the help of Redux toolkit, React Router and Firebase for authentication functionality and data storage."
             href="https://github.com/uyenlai/events-page-with-firebase"
           />
         </div>
